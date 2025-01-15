@@ -4,6 +4,49 @@
 }
 
 
+/* styles.css */
+:root {
+    --background-color: white;
+    --text-color: black;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--text-color);
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Mode sombre */
+  body.dark-mode {
+    --background-color: black;
+    --text-color: white;
+  }
+  
+
 .resumer{
     display: grid;
     grid-template-columns: 50% 50%;
