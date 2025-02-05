@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  list-style: none;
+  overflow-x: clip;
+}
+h1 {
+  font-family: 'limelight', sans-serif;
+} 
+h2 {
+  font-family: 'limelight', sans-serif;
+} 
+p {
+  font-family: 'inter', sans-serif;
+}
+h3 {
+  font-family: 'limelight', sans-serif;
+}
+
+.logo-nav img {
+  max-width: 170px;
+
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  
+}
+.main-header-text h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+header {
+position: relative;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+header nav.black {
+background-color: black;
+
+}
+
+
+header {
+background: url(./image/photo\ voiture.jpg) fixed center/cover;
+color: rgb(255, 255, 255);
+}
+header::after {
+content: "";
+display: block;
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.6);
+}
+header nav {
+padding: 25px;
+text-align: left;
+background: transparent;
+position: relative;
+z-index: 1;
+justify-self: flex-start;
+align-self: flex-start;
+position: fixed;
+top: 0;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-right: 5px;
+}
+
+
+nav li {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.9rem;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease;
+  /* padding: 20px 0; */
+  color: white;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 30px 0 35px;
+  text-align: center;
+  font-family: 'limelight', sans-serif;
+}
+
+.main-header-text h3 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.main-header-text {
+position: relative;
+z-index: 1;
+}
+nav li:first-child::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background:rgb(255, 255, 255) ;
+  transform: translateY(-20px);
+}
+nav li:hover:before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background:rgb(255, 255, 255) ;
+  transform: translateY(-20px);
+}
+nav li:last-child::before {
+  background: none;
+}
+nav li:hover {
+scale: 110%;
+}
+
+
+
+
+
+
+/* **************************************************************** */
+.entre {
+    display: flex;
+  flex-direction: row;
+  margin-right: 20%;
+  margin-left: 10%;
+}
+.bienvenue img {
+  margin-left: 150px;
+  width: 545px;
+  margin-top: 40%;
+  border-radius: 15px;
+}
+.histoire {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 12%;
+  margin-right: 15%;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+.story img {
+  margin-right: 40%;
+  width: 350px;
+
+}
+.story {
+  margin-right: 10%;
+}
+.mission {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.new img {
+  margin-left: 150px;
+  width: 500px;
+  margin-top: 8%;
+  border-radius: 15px;
+}
+.visite {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 15%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.auto img {
+  margin-right: 50%;
+  width: 500px;
+  margin-top: 6%;
+  border-radius: 15px;
+}
+.auto {
+  margin-right: 10%;
+}
+.fin {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+.musee {
+  text-align: center;
+  margin-bottom: 6%;
+}
+.musee img {
+  width: 1140px;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 34px;
+}
+p {
+  font-size: 24px;
+}
+hr {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+  @media screen and (max-width: 768px) {
+  footer {
+      display: block;
+      height: 105vh;
+      text-align: center;
+  }
+    .footer-left {
+      padding-bottom: 30px;
+  }
+    .copyright  {
+      text-align: center;
+      margin-left: 40px;
+  }
+    .logo-nav img {
+      max-width: 110px;
+  }
+  .logofooter {
+    margin-bottom: 20px;
+    margin-top: -20px;
+  
+  }
+    
+    .entre {
+      display: block;
+      margin-right: 10%;
+    }
+    .bienvenue img {
+      display: block;
+      width: 99%;
+      margin-left: 1%;
+      margin-bottom: 10%;
+      margin-top: 10px;
+
+    }
+    .histoire, .mission, .visite {
+      display: block;
+      margin: 2%;
+      margin-bottom: 5%;
+    }
+
+    .story img {
+      width: 300px;
+      margin: auto;
+      margin-top: 5%;
+      margin-left: 8%;
+      margin-bottom: 5%;
+    }
+    .new img {
+      width: 280px;
+      margin: auto;
+      margin-top: 5%;
+      margin-left: 10%;
+      margin-bottom: 5%;
+    }
+    
+    .auto img {
+      width: 298px;
+      margin: auto;
+      margin-top: 5%;
+      margin-left: 8%;
+      margin-bottom: 5%;
+    }
+    .visite {
+      display: block;
+      margin: 2%;
+      margin-bottom: 5%;
+    }
+    .musee img {
+      width: 250px;
+      margin: auto;
+      margin-top: 5px;
+      margin-left: -1%;
+
+    }
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+   }  
+
+
+footer {
+  background-color: #191919;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 30px;
+  height: 55vh;
+  padding-top: 50px;
+  
+}
+footer a {
+  color: white;
+  
+}
+
+footer li {
+  padding-top: 30px;
+}
+
+.logobox {
+  padding-top: 25px;
+  
+  
+}
+
+.logobox i {
+  font-size: 25px;
+  line-height: 20px;
+  padding-right: 12px;
+}
+
+.copyright {
+  position: absolute;
+  align-self: flex-end;
+  padding-bottom: 30px;
+  font-size: 0.8rem;
+}
+.copyright p {
+  font-size: 0.6rem;
+}
+
+.logofooter img {
+  height: 70px;
+}
+.logofooter {
+  padding: 60px 0 0 0 ;
+}
+
+i:hover {
+  color: rgb(229, 211, 15);
+  transition: 0.3s ease;
+
+}
+
+/* @media screen and (max-width: 768px) {
+  .entre {
+    display: block;
+    
+  }
+} */
